@@ -1,12 +1,32 @@
 package com.example.Modelo;
 
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+ 
+
+
+
+@Entity
 public class Empleado{
+	
+
+
 	String id;
 	String nombre;
 	String telefono;
 	String direccion;
+	public Empleado(String id, String nombre, String direccion, String telefono){
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.telefono = telefono;
+		this.direccion = direccion;
 
+
+	}
 	public String getId(){
 		return id;
 	}

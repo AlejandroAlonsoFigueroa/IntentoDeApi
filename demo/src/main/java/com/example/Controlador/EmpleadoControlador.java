@@ -16,6 +16,7 @@ import com.example.Modelo.Empleado;
 import com.example.Service.EmpleadoService;
 
 @RestController
+
 @RequestMapping("/empleados")
 
 public class EmpleadoControlador {
@@ -24,7 +25,7 @@ public class EmpleadoControlador {
 	private EmpleadoService service;
 	
 	@GetMapping("/listar")
-	public List<Map<String, Object>> listar(Model model) {
+	public List<Map<String, Object>> listar() {
 		return service.listar();
 	}
 		

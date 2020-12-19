@@ -6,14 +6,11 @@
     "\\src\\main\\java",
     "\\src\\main\\java\\com",
     "\\src\\main\\java\\com\\example",
-    "\\src\\main\\java\\com\\example\\Controlador",
-    "\\src\\main\\resources",
-    "\\src\\test",
-    "\\src\\test\\java",
-    "\\src\\test\\java\\com",
-    "\\src\\test\\java\\com\\example",
-    "\\src\\test\\java\\com\\example\\demo"
+    "\\src\\main\\java\\com\\example\\Interfaces",
+    "\\src\\main\\java\\com\\example\\ModeloDAO",
+    "\\src\\main\\java\\com\\example\\Service",
+    "\\src\\main\\resources"
   ],
-  "SelectedNode": "\\src\\main\\java\\com\\example\\Controlador\\EmpleadoControlador.java",
+  "SelectedNode": "\\src\\main\\java\\com\\example\\Modelo\\Empleado.java",
   "PreviewInSolutionExplorer": false
 }

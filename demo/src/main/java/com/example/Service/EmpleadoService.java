@@ -13,42 +13,44 @@ import com.example.ModeloDAO.EmpleadoDAO; //impolrtar dao
 
 @Service
 public class EmpleadoService implements InterfaceEmpleado{
-
 	@Autowired
 	EmpleadoDAO dao;
+
+
+
 	
 	@Override
-	public List<Map<String, Object>> listar() {		
+	public List<Map<String, Object>> listar() {
+		
 		return dao.listar();
 	}
 
 	@Override
-	public List<Map<String, Object>> listarId(int id) {
-		// TODO Auto-generated method stub
+	public List<Map<String, Object>> listar(int id) {
+		 //TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int add(Empleado p) {		
-	//	return dao.add(p);
-		return 1; 
+	public Empleado add(Empleado e) {
+		//String sql = "insert into empleado(id, nombre, direccion, telefono)values(?,?,?,?)";
+		//return template.update(sql, e.getId,e.getNombre, e.getDireccion, e.getDireccion);
+		return null;
 	}
 
 	@Override
-	public int edit(Empleado p) {
-		// TODO Auto-generated method stub
-		//return dao.edit(p);
-		return 1;
+	public Empleado edit(Empleado e) {
+	//	String sql="update persona set nombres=?, apellidos=? where id=?";		
+	//	return template.update(sql,p.getNombres(),p.getApellidos(),p.getId());
+		return null;
 	}
 
 	@Override
-	public int delete(int id) {
-		// TODO Auto-generated method stub
-		//return dao.delete(id);
-		return 1;
-
+	public void delete(String  id) {
+	//	String sql="delete from persona where id=?";
+	//	return template.update(sql,id);
+		
 	}
-
 
 
 }

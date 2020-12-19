@@ -18,43 +18,43 @@ import org.springframework.stereotype.Repository;
 
 
 
-
+@Repository
 public class EmpleadoDAO implements InterfaceEmpleado{
 
-@Autowired
+	@Autowired
 	JdbcTemplate template;
 
 	@Override
 	public List<Map<String, Object>> listar() {
-		List<Map<String, Object>> list = template.queryForList("select * from empleados");
-		return list;
+		List<Map<String, Object>> lista = template.queryForList("select * Empleado");
+		return lista;
 	}
 
 	@Override
-	public List<Map<String, Object>> listarId(int id) {
+	public List<Map<String, Object>> listar(int id) {
 		 //TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int add(Empleado e) {
+	public Empleado add(Empleado e) {
 		//String sql = "insert into empleado(id, nombre, direccion, telefono)values(?,?,?,?)";
 		//return template.update(sql, e.getId,e.getNombre, e.getDireccion, e.getDireccion);
-		return 1;
+		return null;
 	}
 
 	@Override
-	public int edit(Empleado e) {
+	public Empleado edit(Empleado e) {
 	//	String sql="update persona set nombres=?, apellidos=? where id=?";		
 	//	return template.update(sql,p.getNombres(),p.getApellidos(),p.getId());
-		return 1;
+		return null;
 	}
 
 	@Override
-	public int delete(int id) {
+	public void delete(String id) {
 	//	String sql="delete from persona where id=?";
 	//	return template.update(sql,id);
-		return 1; 
+		
 	}
 
 
